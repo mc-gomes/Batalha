@@ -4,4 +4,4 @@ Depois de ter aprendido um pouco da linguagem C na universidade, tive a ideia de
 
 A versão inicialmente postada (1/6/2021) foi desenvolvida aos poucos, entre nov/2019 - jul/2020, e quando terminei, pelo menos a ideia básica da lógica do jogo já funcionava.
 
-Coloquei o código aqui com o fim de fazer pequenas melhorias no jogo e ter um controle melhor das mudanças, e ter um primeiro contato mais prático com Git e GitHub.
+Coloquei o código aqui com o fim de fazer pequenas melhorias no jogo e na organização do código, para ter um controle melhor das mudanças, e ter um primeiro contato mais prático com Git e GitHub.
