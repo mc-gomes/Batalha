@@ -30,7 +30,7 @@ de forma que, juntas, formem um barco só.
 4) Após o posicionamento de cada barco, aparecerá uma pequena barreira ao seu redor, representada por vários tracinhos (-).
 Ela serve para que haja uma distância mínima entre os barcos, mas não se preocupe, na hora do jogo ela não aparece.  
 
-- **Dica: Fique ligado com relação a essa barreira! Na hora do jogo, ao encontrar um barco, ela pode te ajudar a ter noção se no campo adversário tem outros barcos por perto ou não ;) **
+**- Dica: Fique ligado com relação a essa barreira! Na hora do jogo, ao encontrar um barco, ela pode te ajudar a ter noção se no campo adversário tem outros barcos por perto ou não ;)**
 
 
 
