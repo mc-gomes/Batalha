@@ -6,7 +6,11 @@ A versão inicialmente postada (1/6/2021) foi desenvolvida aos poucos, entre nov
 
 Coloquei o código aqui com o fim de fazer pequenas melhorias no jogo e na organização do código, para ter um controle melhor das mudanças, e ter um primeiro contato mais prático com Git e GitHub.
 
-**Obs.:** para quem usa Windows, ao rodar o código a tela abre maximizada, mas se não for o caso, para evitar problemas, basta apenas comentar o trecho `# include <windows.h>` no início do código e o trecho a seguir, localizado logo abaixo da `int main()` do código:
+**Obs: Leia bem o arquivo de instruções antes !!**
+
+**Obs2: O código foi desenvolvido no CodeBlocks v20.03 com o compilador GNU GCC Compiler**
+
+**Obs3:** para quem usa Windows, ao rodar o código a tela abre maximizada, mas se não for o caso, para evitar problemas, basta apenas comentar o trecho `# include <windows.h>` no início do código e o trecho a seguir, localizado logo abaixo da `int main()` do código:
 ```
 {HWND hwnd = GetConsoleWindow();
 ShowWindow(hwnd, SW_SHOWMAXIMIZED);}
