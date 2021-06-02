@@ -9,7 +9,7 @@ char letras[10]={'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
 
 void tracinhos(){
     printf("\n");
-    printf("     ");    /// deixar com 5 espaços
+    printf("     ");    /// deixar com 5 espaÃ§os
     for(c=0; c<41; c++){ /* 'c' < (4 x qtd de letras)+1*/
         printf("-");
     }
@@ -17,7 +17,7 @@ void tracinhos(){
 }
 
 void cabecalho(){
-    printf("       ");    /// deixar 7 espaços
+    printf("       ");    /// deixar 7 espaÃ§os
     {for(c=0; c<10; c++){
         printf("%c   ", letras[c]);
     }
@@ -26,7 +26,7 @@ void cabecalho(){
 
 int analise(char cam[LIM][LIM], int l, int c, int n) /// receber o trocou e o lin
 {   int val = 0;
-    if((c-n) >= 0 && (c-n) <= 8){    /// à esquerda
+    if((c-n) >= 0 && (c-n) <= 8){    /// Ã  esquerda
         if(cam[l-1][c-n] == ' '){
             if(n == 2)
                 val = 1;
@@ -40,7 +40,7 @@ int analise(char cam[LIM][LIM], int l, int c, int n) /// receber o trocou e o li
             }
         }
     }
-    if((c+n)-2 >= 1 && (c+n)-2 <= 9){   /// à direita
+    if((c+n)-2 >= 1 && (c+n)-2 <= 9){   /// Ã  direita
         if(cam[l-1][(c+n)-2] == ' '){
             if(n == 2)
                 val = 1;
@@ -224,7 +224,7 @@ void preencher(char cam[LIM][LIM], int L1, int C1, int L2, int C2, int n)
 void area1(char campo[10][10]){
     system("cls");
     cabecalho();
-    for(l=0; l<10; l++){  /* serão 10*/
+    for(l=0; l<10; l++){  /* serÃ£o 10*/
         if(l<=8)
             printf(" %d   |", l+1);
         else
@@ -239,7 +239,7 @@ void area1(char campo[10][10]){
 void area2(char campo[10][10]){
     printf("\n\n");
     cabecalho();
-    for(l=0; l<10; l++){  /* serão 10*/
+    for(l=0; l<10; l++){  /* serÃ£o 10*/
         if(l<=8)
             printf(" %d   |", l+1);
         else
@@ -320,45 +320,45 @@ int main(){
     int a=0, b=0;
 
     /// MENU
-    printf("\n                         Bem-Vindo ao menu instruções do Batalha Naval\n\n");
-    printf("--- Leia com atenção o passo a passo a seguir para montar os barcos de forma correta. ---\n\n");
-    printf("1) Para montar seu campo de batalha você terá BARCOS DE 4 TIPOS DIFERENTES. Totalizando 10 barcos.\n");
-    printf("1.1) Você terá QUATRO barcos do TIPO 1, TRÊS barcos do TIPO 2, DOIS barcos do TIPO 3 e UM barco do TIPO 4.\n");
-    printf("1.2) Os barcos do tipo 1 serão representados pelo número '1', os do tipo 2 pelo número '2' e assim por diante.\n");
-    printf("1.3) Os primeiros barcos que você vai posicionar serão do tipo 1, em seguida serão os do tipo 2 e assim por diante.\n\n");
-    printf("2) Cada número (de 1 a 4) ocupa APENAS um espaço dentro do campo. *É como se cada número fosse um pedaço do barco.*\n");
-    printf("2.1) Os barcos tipo 1 podem ser colocados em qualquer local disponível no campo.");
-    printf(" Porém, a partir dos barcos tipo 2, só será possível inserir um barco se tiver espaço suficiente para ele dentro do campo.\n");
-    printf("2.2) A partir da montagem dos barcos tipo 2, é importante que as partes do barco (números) estejam posicionados próximos uns dos outros, de forma que, juntos, formem um barco só.\n\n");
-    printf("3) Quando for perguntado onde quer inserir os barcos, informe PRIMEIRO A COLUNA (letra) e DEPOIS A LINHA. Caso contrário a jogada não será válida.\n");
-    printf("3.1) Ao informar as coordenadas, a partir dos barcos TIPO 2, informe SOMENTE as coordenadas das EXTREMIDADES dos barcos. Por exemplo:\n   1º) inserir um barco na horizontal;\n   2º) inserir um barco na vertical;\n");
-    printf("3.1.1º) Horizontal: primeiro, informe a coluna e linha da primeira extremidade, depois escolha (NA MESMA LINHA) a coluna da outra extremidade, seja à direita ou à esquerda (respeitando o espaço no campo e o tamanho do barco).\n");
-    printf("3.1.2º) Vertical: primeiro, informe a coluna e linha da primeira extremidade, depois escolha (NA MESMA COLUNA) a linha da outra extremidade, seja para cima ou para baixo (respeitando o espaço no campo e o tamanho do barco).\n");
-    printf("3.2) As partes entre as extremidades serão preenchidas automaticamente.\n\n");
-    printf("4) Durante a montagem, cada barco terá uma barreira à sua volta, representada por vários '-'. Ela serve para que haja um espaço mínimo entre os barcos. Mas não se preocupe, na hora do jogo ela não aparece.\n");
-    printf("4.1) Dica: *Fique ligado em relação a essa barreira! Na hora do jogo, ao encontrar um barco, ela pode te ajudar a ter noção se no campo adversário tem outros barcos por perto ou não ;) *\n");
+    printf("\n                         Bem-Vindo ao menu instruÃ§Ãµes do Batalha Naval\n\n");
+    printf("--- Leia com atenÃ§Ã£o o passo a passo a seguir para montar os barcos de forma correta. ---\n\n");
+    printf("1) Para montar seu campo de batalha vocÃª terÃ¡ BARCOS DE 4 TIPOS DIFERENTES. Totalizando 10 barcos.\n");
+    printf("1.1) VocÃª terÃ¡ QUATRO barcos do TIPO 1, TRÃŠS barcos do TIPO 2, DOIS barcos do TIPO 3 e UM barco do TIPO 4.\n");
+    printf("1.2) Os barcos do tipo 1 serÃ£o representados pelo nÃºmero '1', os do tipo 2 pelo nÃºmero '2' e assim por diante.\n");
+    printf("1.3) VocÃª sempre comeÃ§a a posicionando os barcos do tipo 1, em seguida os do tipo 2 e assim por diante, sem opÃ§Ã£o de alterar essa ordem.\n\n");
+    printf("2) Cada nÃºmero (de 1 a 4) ocupa APENAS um espaÃ§o dentro do campo. *Ã‰ como se cada nÃºmero fosse um pedaÃ§o do barco.*\n");
+    printf("2.1) Os barcos tipo 1 podem ser colocados em qualquer local disponÃ­vel no campo.");
+    printf(" PorÃ©m, a partir dos barcos tipo 2, sÃ³ serÃ¡ possÃ­vel inserir um barco se tiver espaÃ§o suficiente para ele dentro do campo.\n");
+    printf("2.2) A partir da montagem dos barcos tipo 2, Ã© importante que as partes do barco (nÃºmeros) estejam posicionadas prÃ³ximas umas das outras, de forma que, juntas, formem um barco sÃ³.\n\n");
+    printf("3) Quando for perguntado onde quer inserir os barcos, informe PRIMEIRO A COLUNA (letra) e DEPOIS A LINHA. Caso contrÃ¡rio a jogada nÃ£o serÃ¡ vÃ¡lida.\n");
+    printf("3.1) Ao informar as coordenadas, a partir dos barcos TIPO 2, informe SOMENTE as coordenadas das EXTREMIDADES dos barcos. Por exemplo:\n");
+    printf("   1Âº) Inserir um barco na horizontal: primeiro, informe a coluna e linha da primeira extremidade, depois escolha (NA MESMA LINHA) a coluna da outra extremidade, seja Ã  direita ou Ã  esquerda (respeitando o espaÃ§o no campo e o tamanho do barco).\n");
+    printf("   2Âº) Inserir um barco na vertical: primeiro, informe a coluna e linha da primeira extremidade, depois escolha (NA MESMA COLUNA) a linha da outra extremidade, seja para cima ou para baixo (respeitando o espaÃ§o no campo e o tamanho do barco).\n");
+    printf("3.2) As partes entre as extremidades serÃ£o preenchidas automaticamente durante esse processo.\n\n");
+    printf("4) ApÃ³s o posicionamento de cada barco, aparecerÃ¡ uma pequena barreira ao seu redor, representada por vÃ¡rios  tracinhos (-). Ela serve para que haja um espaÃ§o mÃ­nimo entre os barcos, mas nÃ£o se preocupe, na hora do jogo ela nÃ£o aparece.\n\n");
+    printf(" - Dica: Fique ligado em relaÃ§Ã£o a essa barreira! Na hora do jogo, ao encontrar um barco, ela pode te ajudar a ter noÃ§Ã£o se no campo adversÃ¡rio tem outros barcos por perto ou nÃ£o ;)\n");
     printf("\n No final da montagem, o seu campo vai terminar de forma semelhante a esta:");
     area2(exemplo_1);
 
-    printf("\n -Você pode perceber que os números '2', '3' e '4' aparecem numa quantidade maior do que o explicado no passo 1.1 .");
-    printf("\n -Porém, lembre-se de que cada número é como se fosse um PEDAÇO DO BARCO, como foi dito no passo 2. Por isso respeite bem todo o passo 3.\n");
+    printf("\n -VocÃª pode perceber que os nÃºmeros '2', '3' e '4' aparecem numa quantidade maior do que o explicado no passo 1.1 .");
+    printf("\n -PorÃ©m, lembre-se de que cada nÃºmero Ã© como se fosse um PEDAÃ‡O DO BARCO, como foi dito no passo 2. Por isso respeite bem todo o passo 3.\n");
 
-    printf("\n5) EXEMPLO DE UMA SITUAÇÃO DE JOGO:");
+    printf("\n5) EXEMPLO DE UMA SITUAÃ‡ÃƒO DE JOGO:");
     area2(exemplo_2);
 
     printf("\n - LEGENDA:");
-    printf("\n\t .O 'X' indica que você não acertou nada;");
-    printf("\n\t .A letra 'c' significa que você acertou uma parte de um barco;");
-    printf("\n\n *Perceba que mesmo que você encontre um barco inteiro (que nem na linha 9) ele não aparece completo. ");
-    printf("Então analise bem todo o campo para não desperdiçar sua próxima chance ;) *");
+    printf("\n\t .O 'X' indica que vocÃª nÃ£o acertou nada;");
+    printf("\n\t .A letra 'c' significa que vocÃª acertou uma parte de um barco;");
+    printf("\n\n *Perceba que mesmo que vocÃª encontre um barco inteiro (que nem na linha 9) ele nÃ£o aparece completo. ");
+    printf("EntÃ£o analise bem todo o campo para nÃ£o desperdiÃ§ar sua prÃ³xima chance ;) *");
 
-    printf("\n\n - E então, tudo pronto?\n\n");
+    printf("\n\n - E entÃ£o, tudo pronto?\n\n");
     system("pause");
 
 
-    /// INÍCIO
+    /// INÃCIO
     system("cls");
-    printf("-------- Vai começar a Batalha!!! --------\n\n");
+    printf("-------- Vai comeÃ§ar a Batalha!!! --------\n\n");
     printf(" Insira um nome para o Jogador 1: ");
     gets(nome1);
     printf("\n Insira um nome para o Jogador 2: ");
@@ -376,8 +376,8 @@ int main(){
             area1(campo1);
             if(lil_boat >= 1 && lil_boat <= 4)
                 printf("\n Montagem barco TIPO 1");
-            else if(lil_boat >= 5 && lil_boat <= 10){
-                printf("\n Montagem barco TIPO 2");}
+            else if(lil_boat >= 5 && lil_boat <= 10)
+                printf("\n Montagem barco TIPO 2");
             else if(lil_boat >= 11 && lil_boat <= 14)
                 printf("\n Montagem barco TIPO 3");
             else if(lil_boat >= 15 && lil_boat <= 16)
@@ -394,7 +394,7 @@ int main(){
                 trocou = 0;
             }else{
                 if(lil_boat >= 1 && lil_boat <= 4){
-                    campo1[lin-1][trocou-1] = '1'; /// colocar mensagem indicando em qual barco está
+                    campo1[lin-1][trocou-1] = '1';
                     if((trocou-2) >= 0 && (trocou-2) <= 8)
                         campo1[lin-1][trocou-2] = '-';
                     if(trocou >= 1 && trocou <= 9)
@@ -494,8 +494,8 @@ int main(){
             area1(campo2);
             if(lil_boat >= 1 && lil_boat <= 4)
                 printf("\n Montagem barco TIPO 1");
-            else if(lil_boat >= 5 && lil_boat <= 10){
-                printf("\n Montagem barco TIPO 2");}
+            else if(lil_boat >= 5 && lil_boat <= 10)
+                printf("\n Montagem barco TIPO 2");
             else if(lil_boat >= 11 && lil_boat <= 14)
                 printf("\n Montagem barco TIPO 3");
             else if(lil_boat >= 15 && lil_boat <= 16)
@@ -512,7 +512,7 @@ int main(){
                 trocou = 0;
             }else{
                 if(lil_boat >= 1 && lil_boat <= 4){
-                    campo2[lin-1][trocou-1] = '1'; /// colocar mensagem indicando em qual barco está
+                    campo2[lin-1][trocou-1] = '1';
                     if((trocou-2) >= 0 && (trocou-2) <= 8)
                         campo2[lin-1][trocou-2] = '-';
                     if(trocou >= 1 && trocou <= 9)
@@ -620,12 +620,12 @@ int main(){
                 if(campo3[lin-1][trocou-1] != ' '){
                     lin = 0;
                     trocou = 0;
-                    printf("\n INVÁLIDO. Coordenada repetida. Jogue Novamente.\n ");
+                    printf("\n INVÃLIDO. Coordenada repetida. Jogue Novamente.\n ");
                     system("pause");
                 }
                 else{
                     if(campo2[lin-1][trocou-1] != ' '){
-                        campo3[lin-1][trocou-1] = 'c';   /// fazer aparecer o barco todo só depois de acertar tudo
+                        campo3[lin-1][trocou-1] = 'c';   /// fazer aparecer o barco todo sÃ³ depois de acertar tudo
                         area1(campo3);
                         printf("\n ACERTOU! ");
                         acertos1 ++;
@@ -640,12 +640,12 @@ int main(){
                         campo3[lin-1][trocou-1] = 'X';
                         ct_jog1 ++;
                         area1(campo3);
-                        printf("\n ERROU! Agora é a vez de '%s'. ", nome2);
+                        printf("\n ERROU! Agora Ã© a vez de '%s'. ", nome2);
                         system("pause");
                         goto ataque_jog2;}
                     }
                 }
-        }while(ct_jog1 <= 100); /// tem que ser o tamanho do tabuleiro
+        }while(ct_jog1 <= 100); /// tem que ser o tamanho do tabuleiro (10por10 no caso)
         if (acertos1 == 20 && ct_jog1 <= 101){ /// MANTER ACERTOS SEMPRE 20
             for(i=0; i<10; i++){
                 for(j=0; j<10; j++){
@@ -657,7 +657,7 @@ int main(){
             }
             system("cls");
             area2(campo3);
-            printf("\n Parabéns, '%s', você ganhou!!! Encontrou todos os barcos!!\n ", nome1);
+            printf("\n ParabÃ©ns, '%s', vocÃª ganhou!!! Encontrou todos os barcos!!\n ", nome1);
             system("pause");
             goto quase2;}
     }while(ct_jog1 <= 100); /// (tam. do tabuleiro)
@@ -680,7 +680,7 @@ int main(){
                 if(campo4[lin-1][trocou-1] != ' '){
                     lin = 0;
                     trocou = 0;
-                    printf("\n INVÁLIDO. Coordenada repetida. Jogue Novamente.\n ");
+                    printf("\n INVÃLIDO. Coordenada repetida. Jogue Novamente.\n ");
                     system("pause");
                 }
                 else{
@@ -700,12 +700,12 @@ int main(){
                         campo4[lin-1][trocou-1] = 'X';
                         ct_jog2 ++;
                         area1(campo4);
-                        printf("\n ERROU! Agora é a vez de '%s'. ", nome1);
+                        printf("\n ERROU! Agora Ã© a vez de '%s'. ", nome1);
                         system("pause");
                         goto ataque_jog1;}
                     }
                 }
-        }while(ct_jog2 <= 100); /// tem que ser o tamanho do tabuleiro
+        }while(ct_jog2 <= 100); /// tem que ser o tamanho do tabuleiro (10por10 no caso)
         if (acertos2 == 20 && ct_jog2 <= 101 ){ /// MANTER ACERTOS SEMPRE 20
             for(i=0; i<10; i++){
                 for(j=0; j<10; j++){
@@ -717,7 +717,7 @@ int main(){
             }
             system("cls");
             area2(campo4);
-            printf("\n Parabéns, '%s', você ganhou!!! Encontrou todos os barcos!!\n ", nome2);
+            printf("\n ParabÃ©ns, '%s', vocÃª ganhou!!! Encontrou todos os barcos!!\n ", nome2);
             system("pause");
             break;
             goto quase1;
@@ -736,7 +736,7 @@ int main(){
                 }
             }
             area2(campo3);
-            printf("\n Os '~' eram as partes que faltavam para você, '%s'.\n ", nome1);  /// ao invés de deixar os números, trocar pelo 'c'
+            printf("\n Os '~' eram as partes que faltavam para vocÃª, '%s'.\n ", nome1);
             system("pause");
             goto acabou;}
 
@@ -752,7 +752,7 @@ int main(){
                 }
             }
             area2(campo4);
-            printf("\n Os '~' eram as partes que faltavam para você, '%s'.\n ", nome2); /// ao invés de deixar os números, trocar pelo 'c'
+            printf("\n Os '~' eram as partes que faltavam para vocÃª, '%s'.\n ", nome2);
             system("pause");
             goto acabou;}
 
