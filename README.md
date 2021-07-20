@@ -15,3 +15,5 @@ Coloquei o código aqui com o fim de fazer pequenas melhorias no jogo e na organ
 {HWND hwnd = GetConsoleWindow();
 ShowWindow(hwnd, SW_SHOWMAXIMIZED);}
 ```
+
+**Edit: como tinha desenvolvido o código usando Windows, não percebi que ele basicamente só funciona bem nesse mesmo SO por conta de alguns comandos system. Com o tempo vou tentar adaptar isso**
