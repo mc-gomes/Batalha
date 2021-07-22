@@ -24,7 +24,7 @@ void cabecalho(){
     tracinhos();}
 }
 
-int analise(char cam[LIM][LIM], int l, int c, int n) /// teste comentário git
+int analise(char cam[LIM][LIM], int l, int c, int n)
 {   int val = 0;
     if((c-n) >= 0 && (c-n) <= 8){   /// à esquerda
         if(cam[l-1][c-n] == ' '){
