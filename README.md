@@ -16,4 +16,4 @@ Coloquei o código aqui com o fim de fazer pequenas melhorias no jogo e na organ
 ShowWindow(hwnd, SW_SHOWMAXIMIZED);}
 ```
 
-**Edit: como tinha desenvolvido o código usando Windows, não percebi que ele basicamente só funciona bem nesse mesmo SO por conta de alguns comandos system. Com o tempo vou tentar adaptar isso**
+**Edit: como tinha desenvolvido o código usando Windows, quando fui testar no Linux percebi alguns pequenos erros no output por conta dessa diferença de SO. Com o tempo vou tentar adaptar isso**
